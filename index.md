@@ -1,11 +1,5 @@
-## Welcome to my home page!
-Blah blah blah
-
-### More stuff
-
-# Header 1
-## Header 2
-### Header 3
-
-**bold**
-
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+---
