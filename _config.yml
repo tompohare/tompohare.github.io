@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Tom O'Hare's website!
 description: Feel free to bookmark this page to keep track of my updates
+Download [my resume]({{ site.url }}/Resume_Tom_OHare.pdf) directly.
