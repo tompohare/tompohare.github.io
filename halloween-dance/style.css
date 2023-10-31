@@ -1,0 +1,97 @@
+    /* Color Theme Swatches in Hex */
+    .halloween-poster-orange {
+        color: #FF7736;
+    }
+
+    .halloween-poster-white {
+        color: #FCFCFC;
+    }
+
+    .halloween-poster-red {
+        color: #DC5846;
+    }
+
+    .halloween-poster-black {
+        color: #000000;
+    }
+
+    .halloween-poster-yellow {
+        color: #FFCA05;
+    }
+
+    .halloween-poster-gray {
+        color: #B3AFAB;
+    }
+
+    .griffy {
+        font-family: Griffy, Papyrus, fantasy;
+        font-size: 2rem;
+    }
+
+    html {
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        font-family: Verdana, Arial, sans-serif;
+        background-color: #000000; /* black */
+        background-image: url(halloween-dance.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    * {
+        box-sizing: inherit;
+    }
+
+    .main-container {
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .page-header,
+    .page-footer,
+    .page-body {
+        padding: 20px;
+    }
+
+    .backdrop {
+        background-color: hsla(0, 0%, 0%, 0.7); /* black */
+        padding: 5px;
+    }
+
+    h1 {
+        font-family: Creepster, Papyrus, fantasy;
+        font-size: 5.2rem;
+        text-align: center;
+        text-shadow: 3px 5px 3px #706F6E; /* gray */
+        margin: auto;
+    }
+
+    address,
+    h2,
+    h3 {
+        text-align: center;
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        width: 65%;
+        margin: auto;
+        text-align: center;
+    }
