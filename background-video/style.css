@@ -14,6 +14,15 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(118, 97, 123, 0.75);
+  z-index: -1;
+}
 ul {
   list-style: none;
 }
@@ -37,8 +46,9 @@ nav {
 }
 .logo a {
   font-weight: 700;
-  color: #105bd8;
+  color: darkblue;
   font-size: 2em;
+  position: relative;
 }
 nav ul {
   display: flex;
@@ -109,7 +119,7 @@ nav ul li a:hover,
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: -2;
 }
 /* maintain 16:9 video aspect ration */
 @media (min-aspect-ratio: 16/9) {
