@@ -35,7 +35,7 @@ nav {
 }
 .logo a {
   font-weight: 700;
-  color: #00c2cb;
+  color: #105bd8;
   font-size: 2em;
 }
 nav ul {
@@ -139,17 +139,20 @@ nav ul li a:hover,
   }
   nav {
     height: 40px;
-    width: 90%;
+    width: 95%;
   }
   .logo a {
     font-weight: 400;
     font-size: 1.2em;
   }
+  nav ul {
+    padding: 2px;
+  }
   nav ul li a {
     height: 30px;
     line-height: 33px;
     margin: 8px;
-    padding: 0px 20px;
+    padding: 0px 15px;
     font-weight: 300;
     font-size: 0.6em;
   }
@@ -163,5 +166,7 @@ nav ul li a:hover,
   }
   .main-text p {
     font-size: 1em;
+    margin: 20px 0px 30px;
+    line-height: 1.5em;
   }
 }
