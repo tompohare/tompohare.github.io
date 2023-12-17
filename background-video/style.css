@@ -1,0 +1,147 @@
+/*
+Based on article: https://blog.logrocket.com/optimizing-video-backgrounds-css-javascript/
+
+Video from Pixelbay: https://pixabay.com/videos/astronaut-astronomy-exploration-106237/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Asap', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0px 5%;
+  z-index: 1;
+}
+.logo a {
+  font-weight: 700;
+  color: #00c2cb;
+  font-size: 2em;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  height: 40px;
+  line-height: 43px;
+  margin: 10px;
+  padding: 0px 30px;
+  display: flex;
+  font-size: 1em;
+  font-weight: 600;
+  color: #e0ffff;
+  transition: 0.1s;
+}
+nav ul li a:hover,
+.main-text a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  color: #fff;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main-text {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+  line-height: 0;
+}
+.main-text h2 {
+  font-weight: 500;
+  font-size: 2em;
+  color: #e0ffff;
+}
+.main-text h1 {
+  font-size: 4.5em;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+.main-text p {
+  font-size: 1.3em;
+  color: #e0ffff;
+  margin: 25px 0px 25px;
+  line-height: 50px;
+}
+.main-text a {
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: 200;
+  padding: 1em;
+}
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0ffff;
+  font-family: 'Asap', sans-serif;
+}
+#main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* maintain 16:9 video aspect ration */
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+/* styling for mobile devices using media query */
+@media (max-width: 768px) {
+  .logo a {
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+  nav ul li a {
+    font-weight: 300;
+    font-size: 0.6em;
+  }
+  .main-text h2 {
+    font-weight: 400;
+    font-size: 1.4em;
+  }
+  .main-text h1 {
+    font-weight: 400;
+    font-size: 3.8em;
+  }
+  .main-text p {
+    font-size: 1em;
+  }
+}
