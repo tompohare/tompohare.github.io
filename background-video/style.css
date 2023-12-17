@@ -27,9 +27,11 @@ nav {
   height: 60px;
   position: fixed;
   width: 100%;
+  /*
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  */
   padding: 0px 5%;
   z-index: 1;
 }
@@ -64,10 +66,13 @@ nav ul li a:hover,
   position: relative;
 }
 .main-text {
-  position: absolute;
-  left: 13%;
-  top: 42%;
-  transform: translate(-13%, -42%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 0 0 10%;
   line-height: 0;
 }
 .main-text h2 {
@@ -84,30 +89,23 @@ nav ul li a:hover,
 .main-text p {
   font-size: 1.3em;
   color: #e0ffff;
-  margin: 25px 0px 25px;
-  line-height: 50px;
-}
-.main-text a {
-  width: 150px;
-  height: 40px;
-  outline: none;
-  border-radius: 5px;
-  font-size: 1.1em;
-  font-weight: 200;
-  padding: 1em;
+  margin: 0 0 25px;
+  line-height: 3em;
 }
 .btn {
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #e0ffff;
   font-family: 'Asap', sans-serif;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.1em;
+  font-weight: 200;
+  padding: 1em;
 }
 /* style the video to be in the background */
 #background-video {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -156,6 +154,9 @@ nav ul li a:hover,
     font-weight: 300;
     font-size: 0.6em;
   }
+  .main-text {
+    margin: 0 0 0 5%;
+  }
   .main-text h2 {
     font-weight: 400;
     font-size: 1.4em;
@@ -166,7 +167,7 @@ nav ul li a:hover,
   }
   .main-text p {
     font-size: 1em;
-    margin: 20px 0px 30px;
+    margin: 0 0 20px;
     line-height: 1.5em;
   }
 }
